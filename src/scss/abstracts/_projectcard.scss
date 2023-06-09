@@ -1,0 +1,34 @@
+.card{
+    max-width: 340px;
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 5px;
+    background-color: var(--quaternary-color);
+    transition: transform .2s;
+    &:hover{
+        transform: translateY(-10px);
+    }
+    .img-countainer{
+        overflow: hidden;
+        max-height: 200px;
+        max-width: 300px;
+        border-radius: 5px;
+        img{
+            max-width: 100%;
+            max-width: 100%;
+        }
+    }
+    &-footer{
+        margin-top: .5rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+    h4{
+        margin: 1rem 0;
+    }
+    .built{
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 13px;
+    }
+}

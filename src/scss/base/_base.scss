@@ -1,0 +1,35 @@
+html, body{
+    scroll-behavior: smooth;
+    font-family: var(--font-poppins);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+div:target{
+    padding-top: 50px;
+}
+
+a{
+    color: var(--secondary-color);
+    &:hover{
+        transition: .5s;
+        color: var(--quinary-color);
+    }
+}
+
+h2{
+    color: var(--tertiary-color);
+}
+
+h4{
+    color: var(--tertiary-color);
+    font-family: var(--fonts-roboto);
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background-color: var(--secondary-color);
+    width: 80%;
+    margin: auto;
+}

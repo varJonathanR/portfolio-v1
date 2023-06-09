@@ -1,0 +1,22 @@
+.Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 1rem 0;
+    h4{
+        color: var(--quinary-color);
+    }
+    p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .social{
+        margin-top: 1rem;
+        color: var(--quinary-color);
+    }
+    .contactLinks{
+        padding: 0;
+    }
+}

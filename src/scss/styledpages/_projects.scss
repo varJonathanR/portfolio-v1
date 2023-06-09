@@ -1,0 +1,12 @@
+@import '../abstracts/projectcard';
+
+.Projects{
+    padding-top: 2rem;
+    margin: 2rem 0;
+    .project-container{
+        margin: 2rem 0;
+        display: grid;
+        gap: 1.5rem;
+        place-content: center;
+    }
+}

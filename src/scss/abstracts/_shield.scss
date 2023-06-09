@@ -1,0 +1,15 @@
+.skill-shield{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        transition: .3s;
+        background-color: var(--quaternary-color);
+    }
+    h4{
+        margin-left: .5rem;
+    }
+}
