@@ -41,8 +41,13 @@ function ContactForm() {
             }} 
         >
             {({ errors, values, handleChange}) => (
-                <form name='contact' autoComplete='off' method='post' data-netlify="true" netlify>
-                    <input type="hidden" name="name" value="contact" />
+                <form 
+                    name='contact' 
+                    autoComplete='off' 
+                    method='post'
+                    data-netlify="true"
+                >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="top-form">
                         <div className="name-label">
                             <label htmlFor="name">Name:
