@@ -41,7 +41,7 @@ function ContactForm() {
             }} 
         >
             {({ errors, values, handleChange}) => (
-                <Form name='contact' autoComplete='off' method='post' data-netlify="true" netlify>
+                <form name='contact' autoComplete='off' method='post' data-netlify="true" netlify>
                     <input type="hidden" name="name" value="contact" />
                     <div className="top-form">
                         <div className="name-label">
@@ -88,7 +88,7 @@ function ContactForm() {
                     </div>
                     <button type='submit'>SUBMIT</button>
                     { formSent && <p className="success">Form submitted successfully</p> }
-                </Form>
+                </form>
             )}
         </Formik>
     </>
