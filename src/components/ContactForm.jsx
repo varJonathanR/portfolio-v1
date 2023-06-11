@@ -11,7 +11,7 @@ function ContactForm() {
             initialValues={{
                 name: "",
                 email: "",
-                comment: ""
+                message: ""
             }}
             validate={(valores) => {
                 let errores = {};
@@ -79,14 +79,14 @@ function ContactForm() {
                         </div>
                     </div>
                     <div className="comnent-form">
-                        <label htmlFor="comment">Write your message!</label>
+                        <label htmlFor="message">Write your message!</label>
                         <textarea 
-                            name="comment" 
-                            id="comment" 
+                            name="message" 
+                            id="message" 
                             cols="30" 
                             rows="10" 
                             placeholder='SAY HI!' 
-                            value={values.comment} 
+                            value={values.message} 
                             onChange={handleChange}
                             required 
                         ></textarea>
