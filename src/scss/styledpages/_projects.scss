@@ -5,7 +5,21 @@
     .project-container{
         margin: 2rem 0;
         display: grid;
-        gap: 1.5rem;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(300px, 1fr),
+
+        );
         place-content: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Projects{
+        .project-container{
+            gap: 1.5rem;
+            place-content: center;
+        }
     }
 }

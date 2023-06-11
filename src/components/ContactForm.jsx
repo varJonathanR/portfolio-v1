@@ -5,7 +5,7 @@ function ContactForm() {
 
     const [formSent, setFormSent] = useState(false)
 
-  return (
+    return (
     <>
         <Formik 
             initialValues={{
@@ -49,37 +49,32 @@ function ContactForm() {
                 >
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="top-form">
-                        <div className="name-label">
-                            <label htmlFor="name">Name:
-                                <Field 
-                                    type="text" 
-                                    name="name" 
-                                    id="name" 
-                                    placeholder='Your name...' 
-                                    required
-                                />
-                            </label>
+                        <label htmlFor="name">Name:
+                            <Field 
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder='Your name...' 
+                                required
+                            />
                             <ErrorMessage name='name' component={() => (
                                 <div className='error'>{errors.name}</div>
                             )} />
-                        </div>
-                        <div className="mail-label">
-                            <label htmlFor="email">Email:
-                                <Field 
-                                    type="email" 
-                                    name="email" 
-                                    id="email" 
-                                    placeholder='email@email.com'
-                                    required
-                                />
-                            </label>
+                        </label>
+                        <label htmlFor="email">Email:
+                            <Field 
+                                type="email" 
+                                name="email" 
+                                id="email" 
+                                placeholder='email@email.com'
+                                required
+                            />
                             <ErrorMessage name='email' component={() => (
                                 <div className='error'>{errors.email}</div>
                             )} />
-                        </div>
+                        </label>
                     </div>
-                    <div className="comnent-form">
-                        <label htmlFor="message">Write your message!</label>
+                    <label htmlFor="message" className='message'>Write your message!
                         <textarea 
                             name="message" 
                             id="message" 
@@ -90,14 +85,16 @@ function ContactForm() {
                             onChange={handleChange}
                             required 
                         ></textarea>
+                    </label>
+                    <div className="button-container">
+                        <button type='submit'>SUBMIT</button>
+                        { formSent && <p className="success">Form submitted successfully</p> }
                     </div>
-                    <button type='submit'>SUBMIT</button>
-                    { formSent && <p className="success">Form submitted successfully</p> }
                 </form>
             )}
         </Formik>
     </>
-  )
+    )
 }
 
 export default ContactForm

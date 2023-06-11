@@ -1,10 +1,17 @@
 .About{
     padding-top: 3.6rem;
+    width: 80%;
     p{
         margin: 1.2rem 0;
         a{
             font-family: var(--fonts-roboto);
             color: var(--quinary-color);
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .About{
+        width: 100%;
     }
 }

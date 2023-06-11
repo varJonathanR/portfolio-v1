@@ -1,17 +1,16 @@
 @import './mixins';
 
 form{
+    width: 80%;
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .top-form{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: .5rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
         label{
-            font-size: 12px;
+            width: 100%;
+            margin-top: .6rem;
         }
         input{
             width: 100%;
@@ -23,12 +22,7 @@ form{
             font-size: 12px;
         }
     }
-    .comnent-form{
-        margin-top: .6rem;
-        label{
-            text-align: center;
-            font-size: 12px;
-        }
+    .message{
         textarea{
             width: 100%;
             height: 200px;
@@ -36,10 +30,29 @@ form{
             background-color: var(--quaternary-color);
         }
     }
-    button{
-        @extend .button;
-        color: var(--quinary-color);
-        padding: .6rem;
-        margin: .8rem 0;
+    .button-container{
+        text-align: center;
+        button{
+            @extend .button;
+            color: var(--quinary-color);
+            padding: .6rem;
+            margin: .8rem 0;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    form{
+        width: 100%;
+        .top-form{
+            grid-template-columns: 1fr;
+            gap: 0;
+            label{
+                font-size: 12px;
+            }
+        }
+        .message{
+            font-size: 12px;
+        }
     }
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import profile from '../assets/myprofilephoto.jpeg'
+import ContactLinks from './ContactLinks'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ function Navbar() {
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Contact">Contact</a></li>
           <button>RESUME</button>
+          <ContactLinks />
         </ul>
         <div className={`nav-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
           <div className="bar"></div>

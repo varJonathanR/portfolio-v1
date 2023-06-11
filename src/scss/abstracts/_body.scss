@@ -8,10 +8,22 @@
 @import './contactform';
 @import './footer';
 
+.Body{
+    .header{
+        float: left;
+        position: fixed;
+        background-color: var(--primary-color);
+        width: 20%;
+    }
+    .main{
+        flex-direction: column;
+        margin-left: 20%;
+        padding: 2rem;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .Body{
-        display: grid;
-        grid-template-columns: 1fr;
         .header{
             position: fixed;
             background-color: var(--primary-color);
@@ -21,6 +33,7 @@
         }
         .main{
             padding: 1.4rem;
+            margin-left: 0;
         }
     }
 }

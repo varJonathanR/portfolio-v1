@@ -10,9 +10,9 @@ import Footer from './Footer'
 function Body() {
   return (
     <div className='Body'>
-      <div className="header">
+      <aside className="header">
         <Navbar />
-      </div>
+      </aside>
       <main className="main">
         <Home />
         <About />

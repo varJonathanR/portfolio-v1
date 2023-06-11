@@ -9,7 +9,6 @@ function Home() {
       I build things for the web</h1>
       <p className='lessWidth'>Welcome to my portfolio as a Frontend Developer</p>
       <button><a href="#Projects">Check out my projects!</a></button>
-      <ContactLinks />
       <hr />
     </section>
   )
