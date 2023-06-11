@@ -41,30 +41,33 @@ function ContactForm() {
             }} 
         >
             {({ errors, values, handleChange}) => (
-                <form autoComplete='off' netlify>
+                <Form name='contact' autoComplete='off' method='post' data-netlify="true" netlify>
+                    <input type="hidden" name="name" value="contact" />
                     <div className="top-form">
                         <div className="name-label">
-                            <label htmlFor="name">Name:</label>
-                            <Field 
-                                type="text" 
-                                name="name" 
-                                id="name" 
-                                placeholder='Your name...' 
-                                required
-                            />
+                            <label htmlFor="name">Name:
+                                <Field 
+                                    type="text" 
+                                    name="name" 
+                                    id="name" 
+                                    placeholder='Your name...' 
+                                    required
+                                />
+                            </label>
                             <ErrorMessage name='name' component={() => (
                                 <div className='error'>{errors.name}</div>
                             )} />
                         </div>
                         <div className="mail-label">
-                            <label htmlFor="email">Email:</label>
-                            <Field 
-                                type="email" 
-                                name="email" 
-                                id="email" 
-                                placeholder='email@email.com'
-                                required
-                            />
+                            <label htmlFor="email">Email:
+                                <Field 
+                                    type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder='email@email.com'
+                                    required
+                                />
+                            </label>
                             <ErrorMessage name='email' component={() => (
                                 <div className='error'>{errors.email}</div>
                             )} />
@@ -85,7 +88,7 @@ function ContactForm() {
                     </div>
                     <button type='submit'>SUBMIT</button>
                     { formSent && <p className="success">Form submitted successfully</p> }
-                </form>
+                </Form>
             )}
         </Formik>
     </>
