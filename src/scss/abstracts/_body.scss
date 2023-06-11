@@ -5,27 +5,22 @@
 @import '../styledpages/skills';
 @import '../styledpages/contact';
 @import './contactlinks';
+@import './contactform';
 @import './footer';
 
-.Body{
-    display: grid;
-    grid-template-columns: 1fr;
-    .header{
-        position: fixed;
-        background-color: var(--primary-color);
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .main{
-        padding: 1.4rem;
-    }
-}
-
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
     .Body{
+        display: grid;
+        grid-template-columns: 1fr;
+        .header{
+            position: fixed;
+            background-color: var(--primary-color);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
         .main{
-            margin-left: 20%;
+            padding: 1.4rem;
         }
     }
 }

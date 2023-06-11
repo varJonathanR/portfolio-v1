@@ -1,0 +1,12 @@
+.button{
+    border-radius: 5px;
+    border: 1px solid var(--quinary-color);
+    a{
+        font-family: var(--font-roboto);
+        color: var(--quinary-color);
+    }
+    &:hover{
+        transition: 0.5s;
+        background-color: rgba($color: #08FDD8, $alpha: 0.1);
+    }
+}

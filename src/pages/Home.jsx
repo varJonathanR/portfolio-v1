@@ -8,7 +8,7 @@ function Home() {
       <h1><span className='nameH'>Jonathan Rodriguez.</span> <br />
       I build things for the web.</h1>
       <p className='lessWidth'>Welcome to my portfolio as a Junior Frontend Developer</p>
-      <button className='button'><a href="#Projects">Check out my projects!</a></button>
+      <button><a href="#Projects">Check out my projects!</a></button>
       <ContactLinks />
       <hr />
     </section>

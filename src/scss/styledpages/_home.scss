@@ -1,6 +1,8 @@
+@import '../abstracts/mixins';
+
 .Home{
     padding: .5rem;
-    margin-top: 3rem;
+    padding-top: 3.5rem;
     .colored{
         font-family: var(--font-roboto);
         font-size: 1.2rem;
@@ -15,18 +17,9 @@
             color: var(--tertiary-color);
         }
     }
-    .button{
-        border-radius: 5px;
+    button{
+        @extend .button;
         margin-top: 2rem;
-        border: 1px solid var(--quinary-color);
         padding: 1rem;
-        a{
-            font-family: var(--font-roboto);
-            color: var(--quinary-color);
-        }
-        &:hover{
-            transition: 0.5s;
-            background-color: rgba($color: #08FDD8, $alpha: 0.1);
-        }
     }
 }

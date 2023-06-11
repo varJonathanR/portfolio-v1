@@ -33,3 +33,16 @@ hr{
     width: 80%;
     margin: auto;
 }
+
+input{
+    border: none;
+    outline: none;
+    padding: .5rem;
+}
+
+textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    padding: .5rem;
+}

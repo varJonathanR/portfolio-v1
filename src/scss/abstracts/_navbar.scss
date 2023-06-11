@@ -1,3 +1,5 @@
+@import '../abstracts/mixins';
+
 .Navbar{
     height: 60px;
     display: flex;
@@ -15,14 +17,9 @@
     }
 
     button{
-        border-radius: 5px;
-        border: 1px solid var(--quinary-color);
-        padding: .5rem;
+        @extend .button;
         color: var(--quinary-color);
-        &:hover{
-            transition: .5s;
-            background-color: rgba($color: #08FDD8, $alpha: 0.1);
-        }
+        padding: .5rem;
     }
 }
 
@@ -40,6 +37,18 @@
             height: 100vh;
             transform: translateX(-100%);
             transition: all .45s;
+            .img-container{
+                border-radius: 50%;
+                width: 150px;
+                width: 150px;
+                img{
+                    border-radius: 50%;
+                    max-width: 100%;
+                    max-height: 100%;
+                    padding: 1rem;
+                    border: 1px solid #08FDD8;
+                }
+            }
             li{
                 margin-top: .6rem;
                 &::before{
